@@ -9,7 +9,7 @@
 
 <channel>
 	<title>Eyes Care &#8211; Ý Nhi</title>
-	<atom:link href="http://localhost/doancuoiky/woocommerce/product-category/eyes-care/feed/?simply_static_page=6338" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/doancuoiky/woocommerce/product-category/eyes-care/feed/?simply_static_page=8050" rel="self" type="application/rss+xml" />
 	<link>https://ngvynhi.github.io/doancuoiky</link>
 	<description></description>
 	<lastBuildDate>Thu, 15 Jun 2023 11:04:44 +0000</lastBuildDate>
@@ -19,6 +19,14 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.2.2</generator>
+
+<image>
+	<url>https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10048-100x100.png</url>
+	<title>Eyes Care &#8211; Ý Nhi</title>
+	<link>https://ngvynhi.github.io/doancuoiky</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>Fusion Intense</title>
 		<link>https://ngvynhi.github.io/doancuoiky/product/fusion-intense/</link>
