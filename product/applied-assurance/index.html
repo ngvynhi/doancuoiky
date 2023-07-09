@@ -42,6 +42,8 @@ img.emoji {
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="sbttb-fonts-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/smooth-back-to-top-button/assets/css/sbttb-fonts.css?ver=1.1.9" media="all">
+<link rel="stylesheet" id="sbttb-style-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/smooth-back-to-top-button/assets/css/smooth-back-to-top-button.css?ver=1.1.9" media="all">
 <link rel="stylesheet" id="photoswipe-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=7.8.0" media="all">
 <link rel="stylesheet" id="photoswipe-default-skin-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=7.8.0" media="all">
 <style id="woocommerce-inline-inline-css">.woocommerce form .form-row .required { visibility: visible; }</style>
@@ -50,7 +52,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="elementor-frontend-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.14.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
-<link rel="stylesheet" id="elementor-post-101-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/elementor/css/post-101.css?ver=1688711790" media="all">
+<link rel="stylesheet" id="elementor-post-101-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/elementor/css/post-101.css?ver=1688888341" media="all">
 <link rel="stylesheet" id="elementor-pro-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.12.2" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/elementor/css/global.css?ver=1687608586" media="all">
 <link rel="stylesheet" id="hint-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woo-smart-compare/assets/libs/hint/hint.min.css?ver=6.2.2" media="all">
@@ -111,13 +113,25 @@ img.emoji {
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Rất tiếc, sản phẩm này hiện không tồn tại. Hãy chọn một phương thức kết hợp khác.<\/p>
 </script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script id="jquery-js-after">var v = jQuery.fn.jquery;
+			if (v && parseInt(v) >= 3 && window.self === window.top) {
+				var readyList=[];
+				window.originalReadyMethod = jQuery.fn.ready;
+				jQuery.fn.ready = function(){
+					if(arguments.length && arguments.length > 0 && typeof arguments[0] === "function") {
+						readyList.push({"c": this, "a": arguments});
+					}
+					return window.originalReadyMethod.apply( this, arguments );
+				};
+				window.wpfReadyList = readyList;
+			}</script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11" id="regenerator-runtime-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
 <script src="https://stats.wp.com/w.js?ver=202327" id="woo-tracks-js"></script>
-<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
-<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://ngvynhi.github.io/doancuoiky/wp-json/">
 <link rel="alternate" type="application/json" href="https://ngvynhi.github.io/doancuoiky/wp-json/wp/v2/product/102">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ngvynhi.github.io/doancuoiky/xmlrpc.php?rsd">
@@ -128,7 +142,43 @@ img.emoji {
 <link rel="shortlink" href="https://ngvynhi.github.io/doancuoiky/?p=102">
 <link rel="alternate" type="application/json+oembed" href="https://ngvynhi.github.io/doancuoiky/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fngvynhi.github.io%2Fdoancuoiky%2Fproduct%2Fapplied-assurance%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://ngvynhi.github.io/doancuoiky/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fngvynhi.github.io%2Fdoancuoiky%2Fproduct%2Fapplied-assurance%2F#038;format=xml">
-  <style type="text/css">.page-title-bar {
+
+            <style type="text/css">.progress-wrap {
+                    bottom: 50px;
+                    height: 46px;
+                    width: 46px;
+                    border-radius: 46px;
+                    background-color: #ffffff;
+                    box-shadow: inset 0 0 0 2px #cccccc;
+                }
+
+                .progress-wrap.btn-left-side {
+                    left: 50px;
+                }
+
+                .progress-wrap.btn-right-side {
+                    right: 50px;
+                }
+
+                .progress-wrap::after {
+                    width: 46px;
+                    height: 46px;
+                    color: #1f2029;
+                    font-size: 24px;
+                    content: '\e90a';
+                    line-height: 46px;
+                }
+
+                .progress-wrap:hover::after {
+                    color: #1f2029;
+                }
+
+                .progress-wrap svg.progress-circle path {
+                    stroke: #1f2029;
+                    stroke-width: 2px;
+                }</style>
+
+			  <style type="text/css">.page-title-bar {
         background-image: url();
     }</style>
 		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
@@ -443,8 +493,8 @@ img.emoji {
 	<form class="cart" action="http://localhost:8080/doancuoiky/woocommerce/product/applied-assurance/" method="post" enctype="multipart/form-data">
 		
 		<div class="quantity">
-		<label class="screen-reader-text" for="quantity_64a7c62acb8f9">Applied Assurance số lượng</label>
-	<input type="number" id="quantity_64a7c62acb8f9" class="input-text qty text" name="quantity" value="1" aria-label="Product quantity" size="4" min="1" max="" step="1" placeholder="" inputmode="numeric" autocomplete="off">
+		<label class="screen-reader-text" for="quantity_64aa7f4a950e1">Applied Assurance số lượng</label>
+	<input type="number" id="quantity_64aa7f4a950e1" class="input-text qty text" name="quantity" value="1" aria-label="Product quantity" size="4" min="1" max="" step="1" placeholder="" inputmode="numeric" autocomplete="off">
 	</div>
 
 		<button type="submit" name="add-to-cart" value="102" class="single_add_to_cart_button button alt">Thêm vào giỏ hàng</button>
@@ -458,7 +508,7 @@ img.emoji {
 			<!-- ADD TO WISHLIST -->
 			
 <div class="yith-wcwl-add-button">
-		<a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add_to_wishlist=102#038;_wpnonce=697aaa148f" class="add_to_wishlist single_add_to_wishlist" data-product-id="102" data-product-type="simple" data-original-product-id="102" data-title="Add to wishlist" rel="nofollow">
+		<a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add_to_wishlist=102#038;_wpnonce=4def853a44" class="add_to_wishlist single_add_to_wishlist" data-product-id="102" data-product-type="simple" data-original-product-id="102" data-title="Add to wishlist" rel="nofollow">
 		<i class="yith-wcwl-icon fa fa-heart-o"></i>		<span>Add to wishlist</span>
 	</a>
 </div>
@@ -757,16 +807,16 @@ too. In a 7-day independent clinical study testers found…</p>
 <a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/" draggable="false">Applied Assurance</a> <span class="woosc-remove" data-id="102">remove</span>
 </th>
 <th>
-<a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false">Aveeno Daily Moisturizing</a> <span class="woosc-remove" data-id="103">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" draggable="false">Body Lava Luminizer</a> <span class="woosc-remove" data-id="92">remove</span>
 </th>
 <th>
-<a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false">InstaNatural Rose Water Facial</a> <span class="woosc-remove" data-id="219">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false">Aveeno Daily Moisturizing</a> <span class="woosc-remove" data-id="103">remove</span>
 </th>
 <th>
 <a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/" draggable="false">Supple Symmetry</a> <span class="woosc-remove" data-id="230">remove</span>
 </th>
 <th>
-<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" draggable="false">Body Lava Luminizer</a> <span class="woosc-remove" data-id="92">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false">InstaNatural Rose Water Facial</a> <span class="woosc-remove" data-id="219">remove</span>
 </th>
 </tr></thead>
 <tbody>
@@ -776,33 +826,33 @@ too. In a 7-day independent clinical study testers found…</p>
 <a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/" draggable="false">Applied Assurance</a> <span class="woosc-remove" data-id="102">remove</span>
 </td>
 <td>
-<a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false">Aveeno Daily Moisturizing</a> <span class="woosc-remove" data-id="103">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" draggable="false">Body Lava Luminizer</a> <span class="woosc-remove" data-id="92">remove</span>
 </td>
 <td>
-<a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false">InstaNatural Rose Water Facial</a> <span class="woosc-remove" data-id="219">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false">Aveeno Daily Moisturizing</a> <span class="woosc-remove" data-id="103">remove</span>
 </td>
 <td>
 <a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/" draggable="false">Supple Symmetry</a> <span class="woosc-remove" data-id="230">remove</span>
 </td>
 <td>
-<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" draggable="false">Body Lava Luminizer</a> <span class="woosc-remove" data-id="92">remove</span>
+<a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false">InstaNatural Rose Water Facial</a> <span class="woosc-remove" data-id="219">remove</span>
 </td>
 </tr>
 <tr class="tr-default tr-odd tr-image ">
 <td class="td-label">Image</td>
 <td><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/" draggable="false"><img width="406" height="406" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10020.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10020.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10020-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10020-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10020-100x100.jpg 100w" sizes="(max-width: 406px) 100vw, 406px"></a></td>
-<td><a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false"><img width="406" height="406" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-100x100.jpg 100w" sizes="(max-width: 406px) 100vw, 406px"></a></td>
-<td><a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false"><img width="600" height="600" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1.jpg 1212w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-1024x1024.jpg 1024w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-768x768.jpg 768w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-450x450.jpg 450w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-600x600.jpg 600w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px"></a></td>
-<td><a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/" draggable="false"><img width="600" height="600" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2.jpg 1212w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-1024x1024.jpg 1024w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-768x768.jpg 768w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-450x450.jpg 450w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-600x600.jpg 600w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px"></a></td>
 <td><a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" draggable="false"><img width="406" height="406" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-100x100.jpg 100w" sizes="(max-width: 406px) 100vw, 406px"></a></td>
+<td><a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" draggable="false"><img width="406" height="406" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-100x100.jpg 100w" sizes="(max-width: 406px) 100vw, 406px"></a></td>
+<td><a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/" draggable="false"><img width="600" height="600" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2.jpg 1212w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-1024x1024.jpg 1024w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-768x768.jpg 768w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-450x450.jpg 450w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-600x600.jpg 600w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px"></a></td>
+<td><a href="https://ngvynhi.github.io/doancuoiky/product/instanatural-rose-water-facial/" draggable="false"><img width="600" height="600" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1.jpg" class="attachment-woosc-large size-woosc-large" alt="" decoding="async" draggable="false" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1.jpg 1212w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-1024x1024.jpg 1024w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-768x768.jpg 768w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-450x450.jpg 450w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-600x600.jpg 600w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10031-1-100x100.jpg 100w" sizes="(max-width: 600px) 100vw, 600px"></a></td>
 </tr>
 <tr class="tr-default tr-even tr-sku ">
 <td class="td-label">SKU</td>
 <td>SKUMEGA-HR-1-10-8</td>
-<td>SKUMEGA-HR-1-1</td>
-<td>SKUMEGA-HR-1-10-1</td>
-<td>SKUMEGA-HR-1-10-6-1</td>
 <td>SKUMEGA-HR-2</td>
+<td>SKUMEGA-HR-1-1</td>
+<td>SKUMEGA-HR-1-10-6-1</td>
+<td>SKUMEGA-HR-1-10-1</td>
 </tr>
 <tr class="tr-default tr-odd tr-rating ">
 <td class="td-label">Rating</td>
@@ -815,10 +865,10 @@ too. In a 7-day independent clinical study testers found…</p>
 <tr class="tr-default tr-even tr-price ">
 <td class="td-label">Price</td>
 <td><span class="woocommerce-Price-amount amount"><bdi>158.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
-<td><span class="woocommerce-Price-amount amount"><bdi>300.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
-<td><span class="woocommerce-Price-amount amount"><bdi>190.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
-<td><span class="woocommerce-Price-amount amount"><bdi>168.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
 <td><span class="woocommerce-Price-amount amount"><bdi>195.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
+<td><span class="woocommerce-Price-amount amount"><bdi>300.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
+<td><span class="woocommerce-Price-amount amount"><bdi>168.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
+<td><span class="woocommerce-Price-amount amount"><bdi>190.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></td>
 </tr>
 <tr class="tr-default tr-odd tr-stock ">
 <td class="td-label">Stock</td>
@@ -849,10 +899,10 @@ too. In a 7-day independent clinical study testers found…</p>
 <tr class="tr-default tr-odd tr-add_to_cart ">
 <td class="td-label">Add to cart</td>
 <td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=102" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="102" data-product_sku="SKUMEGA-HR-1-10-8" aria-label="Thêm &ldquo;Applied Assurance&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
-<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=103" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="103" data-product_sku="SKUMEGA-HR-1-1" aria-label="Thêm &ldquo;Aveeno Daily Moisturizing&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
-<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=219" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="219" data-product_sku="SKUMEGA-HR-1-10-1" aria-label="Thêm &ldquo;InstaNatural Rose Water Facial&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
-<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=230" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="230" data-product_sku="SKUMEGA-HR-1-10-6-1" aria-label="Thêm &ldquo;Supple Symmetry&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
 <td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="92" data-product_sku="SKUMEGA-HR-2" aria-label="Lựa chọn cho &ldquo;Body Lava Luminizer&rdquo;" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow">Lựa chọn các tùy chọn</a></p></td>
+<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=103" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="103" data-product_sku="SKUMEGA-HR-1-1" aria-label="Thêm &ldquo;Aveeno Daily Moisturizing&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
+<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=230" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="230" data-product_sku="SKUMEGA-HR-1-10-6-1" aria-label="Thêm &ldquo;Supple Symmetry&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
+<td><p class="product woocommerce add_to_cart_inline " style=""><a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=219" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="219" data-product_sku="SKUMEGA-HR-1-10-1" aria-label="Thêm &ldquo;InstaNatural Rose Water Facial&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a></p></td>
 </tr>
 <tr class="tr-default tr-even tr-description ">
 <td class="td-label">Description</td>
@@ -1759,9 +1809,6 @@ too. In a 7-day independent clinical study testers found…
 <tr class="tr-default tr-even tr-additional ">
 <td class="td-label">Additional information</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
 <td>
 <table class="woocommerce-product-attributes shop_attributes">
 			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_color">
@@ -1772,6 +1819,9 @@ too. In a 7-day independent clinical study testers found…
 		</tr>
 	</table>
 </td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>						</div>
@@ -1784,7 +1834,27 @@ too. In a 7-day independent clinical study testers found…
 		<ul class="products columns-3">
 
 			
-					<li class="product type-product post-103 status-publish first instock product_cat-gifts-set product_cat-hair-body has-post-thumbnail shipping-taxable purchasable product-type-simple">
+					<li class="product type-product post-230 status-publish first instock product_cat-hair-body product_cat-nails has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="product-wrap">
+<a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="archive-img-wrap"><img width="400" height="400" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-450x450.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-450x450.jpg 450w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-1024x1024.jpg 1024w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-768x768.jpg 768w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-600x600.jpg 600w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2-100x100.jpg 100w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-2.jpg 1212w" sizes="(max-width: 400px) 100vw, 400px"></div></a><div class="info-wrap">
+<h2 class="woocommerce-loop-product__title"><a href="https://ngvynhi.github.io/doancuoiky/product/supple-symmetry/">Supple Symmetry</a></h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>168.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+<div class="short-description">
+<ul>
+<li>Buildable medium-to-full coverage</li>
+<li>Weightless, airy feel—no caking!</li>
+<li>Long-wearing</li>
+<li>Evens skin tone</li>
+<li>Available in 07 shades (all exclusive to Makeaholic!)</li>
+</ul>
+</div>
+<a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=230" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="230" data-product_sku="SKUMEGA-HR-1-10-6-1" aria-label="Thêm &ldquo;Supple Symmetry&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a><button class="woosc-btn woosc-btn-230 " data-id="230" data-product_name="Supple Symmetry" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10032-2-150x150.jpg">Compare</button><button class="woosq-btn woosq-btn-230" data-id="230" data-effect="mfp-3d-unfold" data-context="default">Xem nhanh</button><button class="woosw-btn woosw-btn-230" data-id="230" data-product_name="Supple Symmetry" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10032-2-150x150.jpg">Add to wishlist</button>
+</div>
+</div>
+</li>
+
+			
+					<li class="product type-product post-103 status-publish instock product_cat-gifts-set product_cat-hair-body has-post-thumbnail shipping-taxable purchasable product-type-simple">
 	<div class="product-wrap">
 <a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="archive-img-wrap"><img width="400" height="400" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10032-100x100.jpg 100w" sizes="(max-width: 400px) 100vw, 400px"></div></a><div class="info-wrap">
 <h2 class="woocommerce-loop-product__title"><a href="https://ngvynhi.github.io/doancuoiky/product/aveeno-daily-moisturizing/">Aveeno Daily Moisturizing</a></h2>
@@ -1799,26 +1869,6 @@ too. In a 7-day independent clinical study testers found…
 </ul>
 </div>
 <a href="https://ngvynhi.github.io/doancuoiky/product/applied-assurance/?add-to-cart=103" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="103" data-product_sku="SKUMEGA-HR-1-1" aria-label="Thêm &ldquo;Aveeno Daily Moisturizing&rdquo; vào giỏ hàng" aria-describedby="" rel="nofollow">Thêm vào giỏ hàng</a><button class="woosc-btn woosc-btn-103 " data-id="103" data-product_name="Aveeno Daily Moisturizing" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10032-150x150.jpg">Compare</button><button class="woosq-btn woosq-btn-103" data-id="103" data-effect="mfp-3d-unfold" data-context="default">Xem nhanh</button><button class="woosw-btn woosw-btn-103" data-id="103" data-product_name="Aveeno Daily Moisturizing" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10032-150x150.jpg">Add to wishlist</button>
-</div>
-</div>
-</li>
-
-			
-					<li class="product type-product post-92 status-publish instock product_cat-hair-body product_cat-wellness has-post-thumbnail shipping-taxable purchasable product-type-variable">
-	<div class="product-wrap">
-<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="archive-img-wrap"><img width="400" height="400" src="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029.jpg 406w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-300x300.jpg 300w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-150x150.jpg 150w, https://ngvynhi.github.io/doancuoiky/wp-content/uploads/sites/3/2023/06/10029-100x100.jpg 100w" sizes="(max-width: 400px) 100vw, 400px"></div></a><div class="info-wrap">
-<h2 class="woocommerce-loop-product__title"><a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/">Body Lava Luminizer</a></h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>195.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-<div class="short-description">
-<ul>
-<li>Buildable medium-to-full coverage</li>
-<li>Weightless, airy feel—no caking!</li>
-<li>Long-wearing</li>
-<li>Evens skin tone</li>
-<li>Available in 07 shades (all exclusive to Makeaholic!)</li>
-</ul>
-</div>
-<a href="https://ngvynhi.github.io/doancuoiky/product/body-lava-luminizer/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="92" data-product_sku="SKUMEGA-HR-2" aria-label="Lựa chọn cho &ldquo;Body Lava Luminizer&rdquo;" aria-describedby="This product has multiple variants. The options may be chosen on the product page" rel="nofollow">Lựa chọn các tùy chọn</a><button class="woosc-btn woosc-btn-92 " data-id="92" data-product_name="Body Lava Luminizer" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10029-150x150.jpg">Compare</button><button class="woosq-btn woosq-btn-92" data-id="92" data-effect="mfp-3d-unfold" data-context="default">Xem nhanh</button><button class="woosw-btn woosw-btn-92" data-id="92" data-product_name="Body Lava Luminizer" data-product_image="http://localhost:8080/doancuoiky/woocommerce/wp-content/uploads/sites/3/2023/06/10029-150x150.jpg">Add to wishlist</button>
 </div>
 </div>
 </li>
@@ -2011,7 +2061,7 @@ Subcribe						</div>
 				<ul id="menu-1-d4a6a00" class="elementor-nav-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-503"><a href="https://ngvynhi.github.io/doancuoiky/about-us/" class="elementor-item">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504"><a href="https://ngvynhi.github.io/doancuoiky/my-account/" class="elementor-item">Contact</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://ngvynhi.github.io/doancuoiky/blog/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="https://ngvynhi.github.io/doancuoiky/blog/" class="elementor-item">Blog</a></li>
 </ul>			</nav>
 					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
 			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
@@ -2020,7 +2070,7 @@ Subcribe						</div>
 				<ul id="menu-2-d4a6a00" class="elementor-nav-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-503"><a href="https://ngvynhi.github.io/doancuoiky/about-us/" class="elementor-item" tabindex="-1">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504"><a href="https://ngvynhi.github.io/doancuoiky/my-account/" class="elementor-item" tabindex="-1">Contact</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://ngvynhi.github.io/doancuoiky/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="https://ngvynhi.github.io/doancuoiky/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
 </ul>			</nav>
 				</div>
 				</div>
@@ -2037,7 +2087,34 @@ Subcribe						</div>
 			window.RS_MODULES.defered = true;
 			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
 			window.RS_MODULES.type = 'compiled';</script>
-				<!-- if gom all in one show -->
+		
+            <div class="progress-wrap btn-right-side">
+				                    <svg class="progress-circle" width="100%" height="100%" viewbox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+                    </svg>
+				            </div>
+
+			
+            <script type="text/javascript">var offset = 50;
+                var duration = 500;
+
+                jQuery(window).on('load', function () {
+                	jQuery(window).on('scroll', function () {
+	                    if (jQuery(this).scrollTop() > offset) {
+	                        jQuery('.progress-wrap').addClass('active-progress');
+	                    } else {
+	                        jQuery('.progress-wrap').removeClass('active-progress');
+	                    }
+	                });
+
+	                jQuery('.progress-wrap').on('click', function (e) {
+	                    e.preventDefault();
+	                    jQuery('html, body').animate({scrollTop: 0}, duration);
+	                    return false;
+	                })
+                })</script>
+
+					<!-- if gom all in one show -->
 				<div id="button-contact-vr" class="">
 			<div id="gom-all-in-one">
 <!-- v3 -->
@@ -2171,11 +2248,7 @@ Subcribe						</div>
 		<style>#button-contact-vr {transform: scale(0.8);}</style>
 					<style>#button-contact-vr {margin: -10px;}</style>
 			
-				<!-- location left right -->
-		<style>#button-contact-vr {right:0;}
-			.phone-bar a {left: auto;right: 30px;padding: 8px 55px 7px 15px;}
-			#button-contact-vr.active #gom-all-in-one .button-contact {margin-left: 100%;}</style>
-			
+		
 		
 		
 										<div class="woosc-popup woosc-search">
@@ -2334,14 +2407,30 @@ Subcribe						</div>
 		})();</script>
 	<link rel="stylesheet" id="rs-plugin-settings-css" href="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.14" media="all">
 <style id="rs-plugin-settings-inline-css">#rs-demo-id {}</style>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2" id="jquery-ui-menu-js"></script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js"></script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+</script>
+<script id="wp-a11y-js-translations">( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-07-03 03:51:18+0000","generator":"GlotPress\/4.0.0-alpha.4","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"Notifications":["Thông báo"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );</script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/a11y.min.js?ver=ecce20f002eda4c19664" id="wp-a11y-js"></script>
+<script id="jquery-ui-autocomplete-js-extra">var uiAutocompleteL10n = {"noResults":"Không tìm thấy kết quả.","oneResult":"Đã tìm thấy 1 kết quả. Hãy dùng phím lên và xuống để di chuyển.","manyResults":"%d kết quả được tìm thấy. Sử dụng phím lên \/ xuống để xem.","itemSelected":"Mục được chọn."};</script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2" id="jquery-ui-autocomplete-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js?ver=1.2.0" id="jquery-selectBox-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js?ver=3.1.6" id="prettyPhoto-js"></script>
 <script id="jquery-yith-wcwl-js-extra">
-var yith_wcwl_l10n = {"ajax_url":"\/doancuoiky\/woocommerce\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"after_add_to_cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"697aaa148f","remove_from_wishlist_nonce":"8e0bda6070","reload_wishlist_and_adding_elem_nonce":"881acfec3d","load_mobile_nonce":"d1d7bd7034","delete_item_nonce":"96f8da8f96","save_title_nonce":"0e36714daa","save_privacy_nonce":"429fddca69","load_fragments_nonce":"df618c125c"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"https:\/\/ngvynhi.github.io\/doancuoiky"};
+var yith_wcwl_l10n = {"ajax_url":"\/doancuoiky\/woocommerce\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"after_add_to_cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"4def853a44","remove_from_wishlist_nonce":"35ecf27a65","reload_wishlist_and_adding_elem_nonce":"86fe10d1be","load_mobile_nonce":"12278c8d29","delete_item_nonce":"66c3533bad","save_title_nonce":"a4d52f3efd","save_privacy_nonce":"5583eb86dd","load_fragments_nonce":"6b8e0ad9e1"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"https:\/\/ngvynhi.github.io\/doancuoiky"};
 </script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js?ver=3.22.0" id="jquery-yith-wcwl-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.14" defer async id="tp-tools-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.14" defer async id="revmin-js"></script>
+<script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/smooth-back-to-top-button/assets/js/smooth-back-to-top-button.js?ver=1.1.9" id="sbttb-script-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.8.0" id="jquery-blockui-js"></script>
 <script id="wc-add-to-cart-js-extra">var wc_add_to_cart_params = {"ajax_url":"\/doancuoiky\/woocommerce\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/doancuoiky\/woocommerce\/?wc-ajax=%%endpoint%%&elementor_page_id=102","i18n_view_cart":"Xem giỏ hàng","cart_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/cart\/","is_cart":"","cart_redirect_after_add":"no"};</script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.8.0" id="wc-add-to-cart-js"></script>
@@ -2357,7 +2446,6 @@ var yith_wcwl_l10n = {"ajax_url":"\/doancuoiky\/woocommerce\/wp-admin\/admin-aja
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woo-smart-compare/assets/libs/print/jQuery.print.js?ver=5.5.0" id="print-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woo-smart-compare/assets/libs/table-head-fixer/table-head-fixer.js?ver=5.5.0" id="table-head-fixer-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js?ver=5.5.0" id="perfect-scrollbar-js"></script>
-<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2" id="jquery-ui-mouse-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.2" id="jquery-ui-sortable-js"></script>
 <script id="woosc-frontend-js-extra">var woosc_vars = {"ajax_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-admin\/admin-ajax.php","user_id":"0cdb64fab32a05bd393b20c8c351de9f","page_url":"#","open_button":"","open_button_action":"open_popup","menu_action":"open_popup","button_action":"show_table","sidebar_position":"right","message_position":"right-top","message_added":"{name} has been added to Compare list.","message_removed":"{name} has been removed from the Compare list.","message_exists":"{name} is already in the Compare list.","open_bar":"no","bar_bubble":"no","adding":"prepend","click_again":"no","hide_empty":"no","click_outside":"yes","freeze_column":"yes","freeze_row":"yes","scrollbar":"yes","limit":"100","remove_all":"Do you want to remove all products from the compare?","limit_notice":"You can add a maximum of {limit} products to the comparison table.","copied_text":"Share link %s was copied to clipboard!","button_text":"Compare","button_text_added":"Compare","button_normal_icon":"woosc-icon-1","button_added_icon":"woosc-icon-74"};</script>
@@ -2386,11 +2474,7 @@ var yith_wcwl_l10n = {"ajax_url":"\/doancuoiky\/woocommerce\/wp-admin\/admin-aja
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.12.2" id="elementor-pro-webpack-runtime-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.0" id="elementor-webpack-runtime-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.0" id="elementor-frontend-modules-js"></script>
-<script src="https://ngvynhi.github.io/doancuoiky/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
-</script>
-<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-admin\/admin-ajax.php","nonce":"7c7e8f27e3","urls":{"assets":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/cart\/","checkout_page_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/checkout\/","fragments_nonce":"0ea157bad2"}},"facebook_sdk":{"lang":"vi","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-admin\/admin-ajax.php","nonce":"edc0c119c0","urls":{"assets":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/cart\/","checkout_page_url":"https:\/\/ngvynhi.github.io\/doancuoiky\/checkout\/","fragments_nonce":"098dc67b68"}},"facebook_sdk":{"lang":"vi","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/ngvynhi.github.io\/doancuoiky\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.12.2" id="elementor-pro-frontend-js"></script>
 <script src="https://ngvynhi.github.io/doancuoiky/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script id="elementor-frontend-js-before">
